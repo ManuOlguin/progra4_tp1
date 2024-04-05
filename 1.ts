@@ -10,7 +10,7 @@ namespace Tareas1 {
             if (a.Prioridad === 'Baja' && b.Prioridad === 'Media') return 1;
             return 0;
         });
-
+ 
         return tareas.filter(tarea => tarea.Estado === 'Pendiente');
     }
 

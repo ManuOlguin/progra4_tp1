@@ -21,7 +21,7 @@ namespace Tareas6 {
                 resolve(tareas);
             }, 3000);
         });
-    }
+    } 
 
     
 

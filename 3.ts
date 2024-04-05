@@ -14,7 +14,7 @@ namespace Tareas3 {
                     if (a.Prioridad === 'Media' && b.Prioridad === 'Baja') return -1;
                     if (a.Prioridad === 'Baja' && b.Prioridad === 'Media') return 1;
                     return 0;
-                });
+                }); 
     
                 resolve(tareasPorPersona);
             }, 3000);

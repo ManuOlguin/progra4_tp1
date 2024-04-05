@@ -49,7 +49,7 @@ namespace Tareas4 {
 
 
 
-
+ 
 
 
 /*Vamos a desarrollar una aplicación para gestionar tareas. Va a ser el futuro Trello. Pero por ahora vamos a hacer una versión mínima (un MVP) hasta conseguir el primer millón de dólares de nuestros inversores. Después le agregaremos web 3, AI y metaverso 😄
