@@ -9,6 +9,8 @@ namespace Tareas5 {
                 tareas.sort((a, b) => {
                     if (a.Prioridad === 'Alta' && b.Prioridad !== 'Alta') return -1;
                     if (a.Prioridad !== 'Alta' && b.Prioridad === 'Alta') return 1;
+                    if (a.Prioridad === 'Media' && b.Prioridad === 'Baja') return -1;
+                    if (a.Prioridad === 'Baja' && b.Prioridad === 'Media') return 1;
                     if (a.Prioridad === b.Prioridad) {
                         return new Date(a.Deadline).getTime() - new Date(b.Deadline).getTime();
                     }
@@ -76,7 +78,6 @@ namespace Tareas5 {
     }
     executeTareas();
 }
-
 
 
 

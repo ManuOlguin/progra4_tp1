@@ -6,6 +6,8 @@ namespace Tareas1 {
         tareas.sort((a, b) => {
             if (a.Prioridad === 'Alta' && b.Prioridad !== 'Alta') return -1;
             if (a.Prioridad !== 'Alta' && b.Prioridad === 'Alta') return 1;
+            if (a.Prioridad === 'Media' && b.Prioridad === 'Baja') return -1;
+            if (a.Prioridad === 'Baja' && b.Prioridad === 'Media') return 1;
             return 0;
         });
 
@@ -23,7 +25,23 @@ namespace Tareas1 {
         },
         {
             Prioridad: 'Media',
-            Estado: 'Hecha',
+            Estado: 'Pendiente',
+            Asignado: 'Jane Doe',
+            Descripcion: 'Review the project',
+            Deadline: new Date('2022-11-30'),
+            Archivo: 'review.txt'
+        },
+        {
+            Prioridad: 'Baja',
+            Estado: 'Pendiente',
+            Asignado: 'Bob Smith',
+            Descripcion: 'Document the project',
+            Deadline: new Date('2022-12-15'),
+            Archivo: 'document.txt'
+        },
+        {
+            Prioridad: 'Media',
+            Estado: 'Pendiente',
             Asignado: 'Jane Doe',
             Descripcion: 'Review the project',
             Deadline: new Date('2022-11-30'),

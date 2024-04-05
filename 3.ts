@@ -11,6 +11,8 @@ namespace Tareas3 {
                 tareasPorPersona.sort((a, b) => {
                     if (a.Prioridad === 'Alta' && b.Prioridad !== 'Alta') return -1;
                     if (a.Prioridad !== 'Alta' && b.Prioridad === 'Alta') return 1;
+                    if (a.Prioridad === 'Media' && b.Prioridad === 'Baja') return -1;
+                    if (a.Prioridad === 'Baja' && b.Prioridad === 'Media') return 1;
                     return 0;
                 });
     
